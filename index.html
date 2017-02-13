@@ -8,179 +8,215 @@
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
+
 	<header class="caption">
 		<h1>Shower Presentation Engine</h1>
 		<p>Yours Truly, Famous Inc.</p>
 	</header>
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
+
+	<section class="slide" id="see-more">
+		<h2 class="shout">CSS Grid Layout</h2>
 	</section>
+
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>What is it?</h2>
+		<ul>
+			<li>two-dimensional grid-based layout system</li>
+			<li>a method of creating grid structures that are described in CSS and not in HTML</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<h2>Terminology</h2>
+		<ul>
+			<li>Grid Container</li>
+			<li class="next">Grid Item</li>
+			<li class="next">Grid Line</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
+		<h2>Grid Line</h2>
 		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+			<img class="cover" src="pictures/grid-line.png" alt="grid line">
 		</figure>
 	</section>
+
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
+		<h2>Terminology</h2>
+		<ul>
+			<li>Grid Container</li>
+			<li>Grid Item</li>
+			<li>Grid Line</li>
+			<li class="next">Grid Track</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Grid Track</h2>
+		<figure>
+			<img class="cover" src="pictures/grid-track.png" alt="grid track">
+		</figure>
 	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
+
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Terminology</h2>
+		<ul>
+			<li>Grid Container</li>
+			<li>Grid Item</li>
+			<li>Grid Line</li>
+			<li>Grid Track</li>
+			<li class="next">Grid Cell</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Grid Cell</h2>
+		<figure>
+			<img class="cover" src="pictures/grid-cell.png" alt="grid cell">
+		</figure>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+
+	<section class="slide">
+		<h2>Terminology</h2>
+		<ul>
+			<li>Grid Container</li>
+			<li>Grid Item</li>
+			<li>Grid Line</li>
+			<li>Grid Track</li>
+			<li>Grid Cell</li>
+			<li class="next">Grid Area</li>
+		</ul>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+
+	<section class="slide">
+		<h2>Grid Area</h2>
+		<figure>
+			<img class="cover" src="pictures/grid-area.png" alt="grid area">
+		</figure>
 	</section>
-	<p class="badge">
+
+	<section class="slide">
+		<h2>Terminology</h2>
+		<ul>
+			<li>Grid Container</li>
+			<li>Grid Item</li>
+			<li>Grid Line</li>
+			<li>Grid Track</li>
+			<li>Grid Cell</li>
+			<li>Grid Area</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Simple example</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="ygqopL" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 1: Defining a Grid" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/ygqopL/">Grid by Example 1: Defining a Grid</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Line-based placement</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="EZpvRN" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 2: Line-based placement" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/EZpvRN/">Grid by Example 2: Line-based placement</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Line-based placement shorthand</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="LxBjBz" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 3: Line-based placement shorthand" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/LxBjBz/">Grid by Example 3: Line-based placement shorthand</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+
+	<section class="slide">
+		<h2>Line-based placement shorthand grid-area</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="ggjxdB" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 4: Line-based placement shorthand grid-area" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/ggjxdB/">Grid by Example 4: Line-based placement shorthand grid-area</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+
+	<!-- tell about named lines and using it with span value -->
+	<section class="slide">
+		<h2>Line-based placement spanning cells</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="EZpvOW" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 5: Line-based placement spanning cells" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/EZpvOW/">Grid by Example 5: Line-based placement spanning cells</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+
+	<section class="slide">
+		<h2>Repeat notation</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="PWBJwg" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 9: The repeat keyword" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/PWBJwg/">Grid by Example 9: The repeat keyword</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Explicit and Implicit Grid</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="GrBMJz" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 10: Explicit and Implicit Grid" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/GrBMJz/">Grid by Example 10: Explicit and Implicit Grid</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Defining Grid Areas</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="ygqzea" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 11: Defining Grid Areas" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/ygqzea/">Grid by Example 11: Defining Grid Areas</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Named Grid Areas with Media Queries</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="wgQaZL" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 13: Redefining grid areas with media queries" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/wgQaZL/">Grid by Example 13: Redefining grid areas with media queries</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Grid auto-placement</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="qRQdRr" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 17: Grid Auto-placement" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/qRQdRr/">Grid by Example 17: Grid Auto-placement</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Auto-fill keyword</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="LxXVqQ" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 20: auto-fill keyword in repeating track definitions" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/LxXVqQ/">Grid by Example 20: auto-fill keyword in repeating track definitions</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Grid Aligning</h2>
+		<p data-height="400" data-theme-id="26638" data-slug-hash="apQvNq" data-default-tab="css,result" data-user="MoHaX" data-embed-version="2" data-pen-title="Grid by Example 32: aligning the grid" class="codepen">See the Pen <a href="http://codepen.io/MoHaX/pen/apQvNq/">Grid by Example 32: aligning the grid</a> by Ivan (<a href="http://codepen.io/MoHaX">@MoHaX</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	</section>
+
+	<section class="slide">
+		<h2>Good to know</h2>
+		<ul>
+			<li>A grid container establishes a new <strong>grid formatting context</strong> for its contents</li>
+			<li>Margins of adjacent grid items <strong>do not</strong> collapse</li>
+			<li>Avoid using percentages in paddings or margins on grid items entirely</li>
+			<li>Grid indexes are writing mode relative. F.e. in Arabic language the first column is the rightmost column</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Browser Support</h2>
+		<img style="width: 100%" src="pictures/browser_support.png" alt="grid layout: browser support table">
+	</section>
+
+	<section class="slide">
+		<h2>Links</h2>
+		<ul>
+			<li><a href="https://www.w3.org/TR/2016/CR-css-grid-1-20160929/">https://www.w3.org/TR/2016/CR-css-grid-1-20160929/</a></li>
+			<li><a href="http://gridbyexample.com/">http://gridbyexample.com/ by Rachel Andrew</a></li>
+			<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS-tricks</a></li>
+			<li><a href="https://github.com/shower/shower">Shower</a></li>
+		</ul>
+	</section>
+
+	<footer class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
+	</footer>
+
 	<div class="progress"></div>
+
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
 </body>
 </html>
